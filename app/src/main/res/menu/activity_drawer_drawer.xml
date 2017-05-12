@@ -3,29 +3,33 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/list_signaler"
+            android:icon="@drawable/ic_action_listsignaler"
+            android:title="Liste des objet signaler" />
+        <item
             android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Signaler objet perdu" />
+            android:icon="@drawable/ic_action_signaler"
+            android:title="Signaler un objet perdu" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Ajouter objet retrouver" />
+            android:icon="@drawable/ic_action_add"
+            android:title="Ajouter un objet retrouver" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:icon="@drawable/ic_action_don"
+            android:title="Fait un don " />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="">
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:icon="@drawable/ic_action_share"
+                android:title="Partager" />
             <item
                 android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Team" />
+                android:icon="@drawable/ic_action_aide"
+                android:title="Aide" />
         </menu>
     </item>
 

@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Pasperdu</string>
-    <string name="title_activity_drawer">Drawer</string>
+    <string name="app_name">M\'Jwenn</string>
+    <string name="title_activity_drawer"> M\'Jwenn </string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -9,4 +9,15 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcome">Service des objets trouvés ou perdus sur mobile</string>
+    <string name="pas_internet">Vérifiez votre connexion internet</string>
+    <string name="facebook_app_id">1499920886687031</string>
+    <string name="nom_proprietaire">Nom propriétaire</string>
+    <string name="objet_perdu">Objet perdu</string>
+    <string name="signaler">Signaler</string>
+    <string name="telephone_du_personne_a_contactez">Téléphone de la personne a contacté.</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="objet_retrouve">Objet retrouvé.</string>
+    <string name="signaler_ojet_perdu">Signaler un objet perdu.</string>
+    <string name="liste_ojet_signale"> Liste des objets signalés. </string>
+
 </resources>

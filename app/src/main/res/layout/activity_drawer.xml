@@ -20,9 +20,9 @@
             android:layout_height="match_parent" />
 
         <!-- The main content view where fragments are loaded -->
+        <!--android:name="com.pasperdu.app.pasperdu.fragment.ListPerduFragment" -->
         <FrameLayout
             android:layout_marginTop="52dp"
-            android:name="com.pasperdu.app.pasperdu.fragment.ListPerduFragment"
             android:id="@+id/flContent"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
