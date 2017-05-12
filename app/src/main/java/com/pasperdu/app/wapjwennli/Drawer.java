@@ -48,8 +48,6 @@ public class Drawer extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Intent i = new Intent(Drawer.this,FBLogin.class);
-                // startActivity(i);
             }
         });
 
