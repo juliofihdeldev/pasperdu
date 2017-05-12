@@ -4,56 +4,110 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="34dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="19dp"
-        app:srcCompat="@mipmap/ic_launcher_round" />
-
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageView2"
-        android:layout_toEndOf="@+id/imageView2"
-        android:layout_toRightOf="@+id/imageView2"
         android:text="Jean Fils Julio"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvAdresse"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="4dp"
-        android:layout_toEndOf="@+id/imageView2"
-        android:layout_toRightOf="@+id/imageView2"
-        android:text="Ou j'ai egare le truc blablabla" />
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:alpha="0"
+        android:maxLines="1"
+        android:text="Adresse"
+        android:textSize="18dp"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tvDateAjout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="500 Gdes"
-        android:layout_below="@+id/textView2"
+        android:text="data "
+        android:textColor="#ccc"
+        android:layout_below="@+id/tvName"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="15dp"
-        android:layout_marginEnd="15dp" />
+        android:layout_alignParentEnd="true" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tvType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView3"
-        android:layout_marginTop="4dp"
-        android:layout_toEndOf="@+id/imageView2"
-        android:layout_toRightOf="@+id/imageView2"
-        android:text="Recompense de 500 Gds" />
+        android:text="Carte"
+        android:textSize="18dp"
+        android:layout_below="@+id/tvName"
+        android:layout_alignLeft="@+id/tvName"
+        android:layout_alignStart="@+id/tvName" />
+
+    <Button
+        android:id="@+id/btnDesign"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:background="@drawable/round_button"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="oo"
+        android:textColor="@color/colorBlanc"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/tvType"
+        android:layout_alignBottom="@+id/tvType"
+        android:layout_toRightOf="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvType"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/btnDesign"
+        android:layout_toRightOf="@+id/btnDesign"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:alpha="0"
+        app:srcCompat="@drawable/ic_action_position"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <ImageView
+
+        android:id="@+id/imageView4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:alpha="0"
+        app:srcCompat="@drawable/ic_action_tel"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toLeftOf="@+id/imageView3"
+        android:layout_toStartOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/tvTelephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:maxLines="1"
+        android:text="+509 48188107"
+        android:textSize="17dp"
+        android:layout_alignLeft="@+id/tvType"
+        android:layout_alignStart="@+id/tvType"
+        android:layout_below="@+id/tvType" />
 </RelativeLayout>

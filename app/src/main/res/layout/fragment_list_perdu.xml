@@ -1,73 +1,54 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pasperdu.app.pasperdu.fragment.AddDoc">
+    tools:context="com.pasperdu.app.wapjwennli.fragment.AddDoc">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical" android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <!--
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            >
+        </android.support.v4.widget.SwipeRefreshLayout>
+        -->
 
-        <ImageView
-            android:id="@+id/imageView2"
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="19dp"
-            app:srcCompat="@mipmap/ic_launcher_round" />
+            android:layout_centerHorizontal="true" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/imageView2"
-            android:layout_toEndOf="@+id/imageView2"
-            android:layout_toRightOf="@+id/imageView2"
-            android:text="Jean Fils Julio"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView2"
-            android:layout_marginTop="4dp"
-            android:layout_toEndOf="@+id/imageView2"
-            android:layout_toRightOf="@+id/imageView2"
-            android:text="Ou j'ai egare le truc blablabla" />
-
-        <TextView
-            android:id="@+id/tvDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/textView2"
-            android:layout_marginEnd="15dp"
-            android:layout_marginRight="15dp"
-            android:text="12 Avril " />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView3"
-            android:layout_marginTop="4dp"
-            android:layout_toEndOf="@+id/imageView2"
-            android:layout_toRightOf="@+id/imageView2"
-            android:text=" Recompense de 500 Gds" />
+        <jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_swipe">
 
         <ListView
             android:id="@+id/lvPiece"
             android:layout_width="match_parent"
-            android:layout_height="420dp"
-            android:text="@string/welcome"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_below="@+id/textView5" />
+            android:layout_marginBottom="23dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/welcome" />
+        </jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout>
+
     </RelativeLayout>
 
-</FrameLayout>
+</RelativeLayout>
